@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  text-align: center;
+  height: 100vh;
+  color: white;
+  background: linear-gradient( #c13584, #e1306c, #fd1d1d);
+  background-repeat: no-repeat;
+}
+
+input{
+  width: 20%;
+  height: 50px;
+  margin: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.top{
+  position: relative;
+  top: 200px;
+}
+
+.name{
+  margin-bottom: 30px;
+}
+
+h1{
+  margin: 10px auto;
+}
+
+.Other-option{
+  margin-top: 20px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Instagram</title>
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles3.css">
+
+    <!-- Font -->
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+
+<!-- BOOTSTRAP JS -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </head>
+  <body class="container">
+
+
+    <!-- NAVBAR -->
+<!-- <nav class="navbar  navbar-light "  style="padding:8px 0;">
+  <a class="navbar-brand" href="#"><i class="fab fa-instagram fa-2x"></i> <span class="logo">Instagram</span></a>
+  <ul class="nav justify-content-end">
+
+<li class="nav-item">
+  <a class="nav-link active" href="/profile/<%= username %>/feed"><i class="far fa-compass fa-2x"></i></a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#"><i class="far fa-heart fa-2x"></i></a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/profile/<%= username %>"><i class="fas fa-user fa-2x"></i> </a>
+</li>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog fa-2x "></i></a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="/profile/<%= username %>/editbio" >Edit Bio</a>
+      <a class="dropdown-item" href="/profile/<%= username %>/editUsername">Edit Username</a>
+      <a class="dropdown-item" href="/profile/<%= username %>/changeprofile" > Change Profile picture </a>
+      <a class="dropdown-item" href="/logout" > LogOut </a>
+
+    </div>
+  </li>
+</ul>
+</nav> -->
+
+
+
+<!-- PROFILE CONTAINER -->
+    <div class="profile-box row">
+        <div class="picture col-md-3">
+            <img class="profile-picture" src= "/images/<%= profileImg %>"  alt="profileImage">
+        </div>
+        <div class="posts col-md-3">
+            <p  class="numbers">5</p>
+            <h2 class="attribute">Posts</h2>
+        </div>
+        <div class="followers col-md-3">
+          <p class="numbers">178</p>
+          <h2 class="attribute">Followers</h2>
+        </div>
+        <div class="following col-md-3">
+          <p class="numbers">325</p>
+          <h2 class="attribute">Following</h2>
+        </div>
+        <div class="col-md-12 follow">
+          <button type="button" class="btn btn-info button"  name="button">Follow</button>
+        </div>
+    </div>
+
+<!-- BIO -->
+    <div class="bio-box">
+
+
+    <h2 class="username" > <%= username %> </h2>
+    <p class="bio"> <%= bio %></p>
+
+
+
+    </div>
+
+    <div class="photos row">
+
+
+      <div class="col-md-4">
+          <img class="img-fluid" src="/images/profile.jpg" alt="">
+      </div>
+      <div class="col-md-4">
+          <img class="img-fluid" src="/images/profile.jpg" alt="">
+      </div>
+      <div class="col-md-4">
+          <img class="img-fluid" src="/images/profile.jpg" alt="">
+      </div>
+      <div class="col-md-4">
+          <img class="img-fluid" src="/images/profile.jpg" alt="">
+      </div>
+      <div class="col-md-4">
+          <img class="img-fluid" src="/images/profile.jpg" alt="">
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+      document.querySelector(""){}
+    </script>
+
+  </body>
+</html>

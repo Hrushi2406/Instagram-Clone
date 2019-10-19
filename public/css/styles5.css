@@ -1,0 +1,189 @@
+*{
+  font-family: "Montserrat";
+}
+
+.nav-link{
+  padding:0 40px;
+}
+
+.logo{
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.profile-box{
+  margin-top: 20px;
+}
+
+.picture{
+  padding: 50px;
+  height: 255px;
+
+}
+
+.Userprofile{
+  width: 100%;
+  border-radius: 100%;
+
+}
+
+
+.headerName{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.profile-picture{
+  padding: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.posts{
+padding-top: 45px;
+text-align: center;
+}
+
+.followers{
+  padding-top: 45px;
+  text-align: center;
+}
+
+.following{
+  padding-top: 45px;
+  text-align: center;
+}
+
+.numbers{
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.attribute{
+  font-weight: 200;
+  font-size: 1.8rem;
+}
+
+.bio-box{
+
+}
+
+.username{
+  margin: 40px 0 20px 0;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.bio{
+  font-size: 1.2rem;
+}
+
+.photos{
+margin: 40px 0;
+}
+
+.col-md-4{
+  padding: 5px 5px;
+}
+
+.header{
+  
+  height: 70px;
+}
+
+.chatHead{
+padding: 0 71.875px;
+  height: 70px;
+}
+
+.chatHeadimg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+
+}
+
+.headName{
+  padding: 14px 0;
+}
+
+
+
+
+
+
+@media (max-width:768px){
+  .navbar-brand{
+    display: none;
+  }
+  .nav-link{
+    text-align: center;
+    font-size: 12px;
+    padding: 0 30px;
+  }
+  .picture{
+    width: 25%;
+    height: 25%;
+    padding: 0;
+
+  }
+  .numbers{
+    font-size: 16px;
+  }
+
+  .attribute{
+    font-size: 16px;
+  }
+
+  .posts{
+    width: 25%;
+    height: 25%;
+    padding-top: 20px;
+
+  }
+
+  .followers{
+    width: 25%;
+    height: 25%;
+    padding-top: 20px;
+
+  }
+
+  .following{
+    width: 25%;
+    height: 25%;
+  padding-top: 20px;
+
+  }
+  .profile-picture{
+    width: 100%;
+    height: 40%;
+    margin-bottom: 100px;
+  }
+  .post{
+    padding-top: 0;
+  }
+
+  .username{
+    font-size: 18px;
+  }
+
+  .bio{
+    font-size: 16px;
+  }
+  .photos{
+    margin:  20px 0;
+  }
+
+  .col-md-3{
+    display: none;
+  }
+
+}

@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+
+<div class="container" style = "margin:350px 34%;" >
+  <form class="form-group" action="/profile/<%= username %>/profileImg?_method=PATCH" method="post">
+
+    <input  class="btn btn-lg " type="file" name="changedprofile" value="">
+    <button  class="btn btn-lg btn-dark" type="submit" name="button">Upload</button>
+</form>
+</div>
+
+
+
+<%- include('partials/footer') %>

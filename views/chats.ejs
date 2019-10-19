@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Instagram</title>
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles5.css">
+
+    <!-- Font -->
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+
+<!-- BOOTSTRAP JS -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </head>
+  <body class="container">
+
+
+    <!-- NAVBAR -->
+<nav class="navbar  navbar-light " style="padding:8px 0;">
+  <a class="navbar-brand" href="#"><i class="fab fa-instagram fa-2x"></i> <span class="logo">Instagram</span></a>
+  <ul class="nav justify-content-end">
+
+<li class="nav-item">
+  <a class="nav-link active" href="/profile/<%= username %>/feed"><i class="far fa-compass fa-2x"></i></a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#"><i class="far fa-heart fa-2x"></i></a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/profile/<%= username %>"><i class="fas fa-user fa-2x"></i> </a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/profile/<%= username %>"><i class="fas fa-paper-plane fa-2x"></i></a>
+</li>
+
+</ul>
+</nav>
+
+
+<!-- BODY -->
+
+<div class="row" style="padding-top:20px;">
+
+
+
+  <!-- STORIES -->
+      <div class="col-md-3">
+        <h2 class="text-center" style="letter-spacing:10px;">Friends</h2>
+        <div class="picture">
+            <img class="profile-picture" src="/images/<%= profileImg %>"  alt="">
+          </div>
+          <%  userFriends.forEach(function(user){ %>
+              <div class="picture">
+                <a href="/profile/<%=user.username%>/profile"><img class="profile-picture" src="/images/<%= user.profileImage %>"  alt=""></a>
+              </div>
+          <%  }); %>
+
+              </div>
+
+
+
+
+    <div class="col-md-9">
+
+      <div class="header row">
+
+          <div class="col-sm-3 chatHead">
+                <img class="chatHeadimg" src="/images/<%= profileImg %>"  alt="">
+          </div>
+
+          <div class="col-sm-9 headName">
+              <h2 style="margin:0;">Username</h2>
+          </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- <div class="card border-dark mb-3" style="max-width: 18rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body text-dark">
+        <h5 class="card-title">Dark card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div> -->
+
+
+
+
+
+  </body>
+</html>

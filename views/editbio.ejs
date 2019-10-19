@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <form class="form-group" action="/profile/<%= username %>/bio?_method=PATCH" method="POST">
+    <div class="form-group">
+   <label for="comment">Describe Yourself</label>
+   <textarea class="form-control" rows="10" id="comment" name="editedBio" autofocus></textarea>
+  </div>
+    <button  class="btn btn-dark btn-lg" type="submit" name="button">Add Bio</button>
+  </form>
+
+</div>
+
+
+
+<%- include('partials/footer') %>

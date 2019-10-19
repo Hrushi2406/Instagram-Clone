@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<div class="container" style="margin:250px auto; width: 20%;text-align:center;">
+  <form class="form-group" action="/profile/<%= username %>/UserName?_method=PATCH" method="POST">
+    <i class="fab fa-instagram fa-5x"></i>
+    <h1 style="margin-bottom: 30px;">Instagram</h1>
+    <div class="form-group">
+   <label for="comment">Enter Username</label>
+   <input class="form-control" id="comment" name="editedUsername" autofocus></input>
+  </div>
+    <button  class="btn btn-dark btn-lg rounded" type="submit" name="button">Change</button>
+  </form>
+
+</div>
+
+
+
+<%- include('partials/footer') %>
